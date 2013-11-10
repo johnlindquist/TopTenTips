@@ -1,0 +1,1 @@
+Treat each section of the site as a "mini app"

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../bower_components/bootstrap.css/css/bootstrap.css"/>
+</head>
+<body ng-app="" ng-controller="AppCtrl">
+    <h2>No dot: {{nodot}}</h2>
+    <h2>Dot: {{dot.message}}</h2>
+
+<div class="well" ng-controller="NoDotCtrl">
+    No dot: <input type="text" ng-model="nodot"/>
+</div>
+<div class="well" ng-controller="DotCtrl">
+    Dot: <input type="text" ng-model="dot.message"/>
+</div>
+
+
+<script src="../bower_components/angular/angular.js"></script>
+<script>
+    function AppCtrl($scope) {
+        $scope.nodot = "I'll fail";
+
+        $scope.dot = {message: "I'll work"};
+    }
+
+    function NoDotCtrl($scope){}
+
+    function DotCtrl($scope){}
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ng-init is for demos, not real world code

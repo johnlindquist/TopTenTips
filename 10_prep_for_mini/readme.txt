@@ -1,0 +1,1 @@
+ngmin app.js app.annotate.js
